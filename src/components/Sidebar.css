@@ -1,0 +1,75 @@
+/* client/src/components/Sidebar.css */
+.sidebar {
+  width: 280px; /* Adjust width as needed */
+  background-color: #f8f9fa; /* Light background for sidebar */
+  border-right: 1px solid #dee2e6;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Take full height of its container */
+  box-sizing: border-box;
+}
+
+.sidebar-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e9ecef;
+}
+.sidebar-header h2 {
+  font-size: 1.3rem;
+  color: #343a40;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.new-thread-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.new-thread-btn:hover {
+  background-color: #0056b3;
+}
+
+.threads-list h3 {
+  font-size: 1rem;
+  color: #495057;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.threads-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px; /* Example max height, make it scrollable if needed */
+  overflow-y: auto;
+}
+.threads-list li {
+  padding: 10px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #343a40;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.threads-list li:hover {
+  background-color: #e9ecef;
+}
+.threads-list li.active-thread {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+.no-threads-message {
+    font-size: 0.85em;
+    color: #6c757d;
+    text-align: center;
+    padding: 10px 0;
+}

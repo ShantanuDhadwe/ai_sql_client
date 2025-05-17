@@ -1,0 +1,29 @@
+/* client/src/App.css - Main Layout Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #eef1f4; /* A slightly different overall background */
+  color: #333;
+  height: 100vh;
+  overflow: hidden; /* Prevent body scrolling, individual panes will scroll */
+}
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Other global styles or resets if needed */
+
+.loading-indicator { /* For the initial session loading */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+/* You will also need Sidebar.css and MainContent.css from the previous steps */
+/* Ensure ChartComponent.css is also handled or its styles are incorporated */
